@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  background-color: #2b2b2b;
+}
+.container{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  width: 100%;
+  height: 850px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.calculator {
+  margin-top: 81px;
+  width: 270px;
+  height: 500px;
+  border-radius: 40px;
+  background: #000;
+  color: #fff;
+  padding: 35px 16px 23px;
+  box-shadow: 0 0 0 5px #4f4f4f;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-screen {
+  transition: 550ms;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 145px;
+  width: 263px;
+}
+
+.basic {
+  font-size: 75px;
+  margin: 0;
+  line-height: 80px;
+  text-align: right;
+}
+
+.comma_size_xs {
+  font-size: 64px;
+}
+.minus_comma_size_xs {
+  font-size: 58px;
+}
+.minus_comma_size_xxs {
+  font-size: 66px;
+}
+
+.comma_dot_size_xs {
+  font-size: 71px;
+}
+.comma_dot_size_s {
+  font-size: 60px;
+}
+.comma_dot_size_m {
+  font-size: 52px;
+}
+.comma_dot_size_l {
+  font-size: 46px;
+}
+.comma_dot_size_xl {
+  font-size: 41px;
+}
+.minus_comma_dot_size_xs {
+  font-size: 62px;
+}
+.minus_comma_dot_size_s {
+  font-size: 54px;
+}
+.minus_comma_dot_size_m {
+  font-size: 48px;
+}
+.minus_comma_dot_size_l {
+  font-size: 42px;
+}
+.minus_comma_dot_size_xl {
+  font-size: 38px;
+}
+
+.doublecomma_size_xs {
+  font-size: 53px;
+}
+.doublecomma_size_s {
+  font-size: 47px;
+}
+.doublecomma_size_m {
+  font-size: 42px;
+}
+.minus_doublecomma_size_xs {
+  font-size: 49px;
+}
+.minus_doublecomma_size_s {
+  font-size: 44px;
+}
+.minus_doublecomma_size_m {
+  font-size: 40px;
+}
+
+.doublecomma_dot_size_xs {
+  font-size: 50px;
+}
+.doublecomma_dot_size_s {
+  font-size: 45px;
+}
+.doublecomma_dot_size_m {
+  font-size: 40px;
+}
+.minus_doublecomma_dot_size_xs {
+  font-size: 53px;
+}
+.minus_doublecomma_dot_size_s {
+  font-size: 48px;
+}
+.minus_doublecomma_dot_size_m {
+  font-size: 43px;
+}
+
+.dot_size_xs {
+  font-size: 64px;
+}
+.dot_size_s {
+  font-size: 55px;
+}
+.dot_size_m {
+  font-size: 48px;
+}
+.dot_size_l {
+  font-size: 42.5px;
+}
+.minus_dot_size_xs {
+  font-size: 68px;
+}
+.minus_dot_size_s {
+  font-size: 58px;
+}
+.minus_dot_size_m {
+  font-size: 50px;
+}
+.minus_dot_size_l {
+  font-size: 44px;
+}
+.minus_dot_size_xl {
+  font-size: 39px;
+}
+
+.calc-buttons {
+  transition: 550ms;
+  display: grid;
+  grid-template-areas:
+		'ac plus-minus percent division'
+		'seven eight nine multiply'
+		'four five six minus'
+		'one two three plus'
+		'zero zero dot equal';
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: auto;
+}
+
+.btn {
+  border: none;
+  width: 60px;
+  height: 60px;
+  background: #a6a6a6;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: 550ms;
+}
+
+.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+  text-align: left;
+  padding: 0 22px;
+}
+
+.dark {
+  background-color: #343434;
+  color: #fff;
+}
+.dark:hover {
+  filter: brightness(120%);
+}
+.dark:active {
+  filter: brightness(170%);
+  transition: 250ms;
+}
+
+.grey {
+  background-color: #a5a5a5;
+  color: #000000;
+}
+.grey:hover {
+  filter: brightness(120%);
+}
+.grey:active {
+  filter: brightness(140%);
+  transition: 250ms;
+}
+
+.orange,
+.equal {
+  background-color: #ff9f0a;
+  color: #fff;
+  font-size: 28px;
+  transition: 650ms;
+}
+.orange:focus,
+.orange:active {
+  background-color: #fff;
+  color: #ff9f0a;
+}
+.orange:hover {
+  filter: brightness(110%);
+}
+.equal:hover {
+  filter: brightness(110%);
+  transition: 200ms;
+}
+.equal:active {
+  filter: grayscale(30%) brightness(120%);
+  transition: 500ms;
+}
+
+.powered {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  width: 150px;
+  height: 24px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 0 0 3px #4f4f4f;
+}
+.git {
+  text-decoration: none;
+  color: #ff9f0a;
+}
+.git:hover {
+  color: #fff;
+}
+.git:active {
+  color: #adadad;
+}
